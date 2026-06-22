@@ -4,7 +4,7 @@ const koffi = require('koffi');
 // 1. Screen Initialization
 const screen = blessed.screen({
   smartCSR: true,
-  title: 'Codex TUI Chat Assistant',
+  title: 'AppName TUI Chat Assistant',
   dockBorders: true
 });
 
