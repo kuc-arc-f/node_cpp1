@@ -64,3 +64,7 @@ list
 * Esc key , Ctrl + C
 
 ***
+### blog
+
+https://zenn.dev/knaka0209/scraps/6268991ab7738e
+
