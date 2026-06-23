@@ -10,8 +10,9 @@
 
 ***
 
-node.js C++ , blessed TUI example
+node.js C++ , TUI example
 
+* blessed , Ink TUI
 * nod.js call C++ so (Shared Object)
 * node 22
 * gcc version 14.2.0
@@ -19,7 +20,16 @@ node.js C++ , blessed TUI example
 * make
 * Linux
 
+
 ***
 ### related
 
+* blessed
+
 https://github.com/chjj/blessed
+
+***
+* Ink
+
+https://github.com/vadimdemedes/ink
+
