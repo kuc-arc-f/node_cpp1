@@ -33,7 +33,7 @@ clang++ -shared -fPIC sample.cpp -o libsample.so
 ```
 ***
 * LIB_PATH set
-* src/lib/LibConfig.js
+* src/lib/LibConfig
 ```
 LIB_PATH: "/home/tmp/libsample.so",
 ```
@@ -41,8 +41,9 @@ LIB_PATH: "/home/tmp/libsample.so",
 ***
 * node start
 ```
-node ./src/index.js
+npx tsx src/index.ts
 ```
+
 ***
 * test-code
 * add
