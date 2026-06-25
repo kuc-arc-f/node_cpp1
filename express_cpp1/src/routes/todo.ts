@@ -1,5 +1,5 @@
 import express from 'express';
-import LibConfig from "../lib/LibConfig.js";
+import LibConfig from "../lib/LibConfig";
 import koffi from "koffi"
 
 const router = express.Router();

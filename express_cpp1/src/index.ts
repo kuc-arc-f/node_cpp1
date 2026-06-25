@@ -4,7 +4,7 @@ import cookieParser from "cookie-parser";
 
 //import LibConfig from './lib/LibConfig';
 //import commonRouter from './routes/common';
-import todoRouter from './routes/todo.js';
+import todoRouter from './routes/todo';
 
 const app = express();
 import 'dotenv/config'
