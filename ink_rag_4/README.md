@@ -51,12 +51,6 @@ sudo apt install libcurl4-openssl-dev
 * rs_rag_4/example.db , file copy
 
 ***
-* env value
-
-```
-export GEMINI_API_KEY=your-key
-```
-***
 ### env value
 
 ```
