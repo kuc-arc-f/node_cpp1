@@ -74,3 +74,7 @@ npm run start
 * Ctrl + C
 
 ***
+### blog
+
+https://zenn.dev/knaka0209/scraps/f851ac8131039e
+
