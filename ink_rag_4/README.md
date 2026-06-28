@@ -1,12 +1,12 @@
 ﻿# ink_rag_4
 
- Version: 0.9.4
+ Version: 0.9.1
 
  Author  :
 
  date    : 2026/06/25
 
- update :
+ update : 2026/06/28
 
 ***
 
@@ -35,7 +35,7 @@ https://openrouter.ai/models
 
 * RAG APP
 
-![img1](/images/ink_rag_4.png)
+![img1](/images/ink_rag_4_2.png)
 
 ***
 * LIB add

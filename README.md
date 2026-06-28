@@ -1,6 +1,6 @@
 ﻿# node_cpp1
 
- Version: 0.9.4
+ Version: 0.9.2
 
  Author  :
 
@@ -33,3 +33,8 @@ https://github.com/chjj/blessed
 
 https://github.com/vadimdemedes/ink
 
+***
+### version
+
+* V_0_9_1: new
+***

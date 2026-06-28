@@ -115,7 +115,7 @@ function MessageBubble({ message, terminalWidth }) {
             borderColor: isUser ? COLORS.accent : COLORS.success,
             paddingX: 1,
             paddingY: 0,
-            width: maxWidth,
+            //width: maxWidth,
             children: lines.map((line, i) => {
               if (line.startsWith("```")) {
                 return /* @__PURE__ */ jsx(Text, { color: COLORS.warning, bold: true, children: line }, i);
