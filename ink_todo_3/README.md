@@ -25,7 +25,7 @@ node.js C++ , Ink TUI , TODO
 
 * TODO APP
 
-![img1](/images/ink_todo_3.png)
+![img1](/images/ink_todo_3_2.png)
 
 
 ***

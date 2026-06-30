@@ -3,14 +3,15 @@ import { render, Box, Text } from 'ink';
 import TextInput from 'ink-text-input';
 import koffi from "koffi";
 
-/*
+const start_str = `Welcome
+Chat app Example
+
+`;
+
 const ITEM_DATA = [
-  {id: "1" , title: "title-001"},
-  {id: "2" , title: "title-002"},
-  {id: "3" , title: "title-003"},
-]
-*/
-const ITEM_DATA = [];
+  {id: "-1" , type: "info", title: start_str},
+];
+//const ITEM_DATA = [];
 
 const TEST_TEXT_DATA = `Test-Text-data-001 , Test-Text-data-002 , Test-Text-data-003 , Test-Text-data-004 , Test-Text-data-005, Test-Text-data-006
 Test-Text-data-001 , Test-Text-data-002 , Test-Text-data-003 , Test-Text-data-004 , Test-Text-data-005, Test-Text-data-006
@@ -60,11 +61,11 @@ function SearchCommandLine() {
 
   return (
   <Box flexDirection="column" padding={1}>
-    <Box flexDirection="column" padding={1}>
+    <Box flexDirection="column" padding={0}>
       {items.map(item => {
         if(item.type === "user"){
           return(
-            <Box key={item.id} flexDirection="column" borderStyle="round" marginBottom={1}>
+            <Box key={item.id} flexDirection="column" borderStyle="round" marginBottom={0}>
               <Text bold color="cyan">You:</Text>
               <Text>{item.title}</Text>
             </Box>
@@ -72,9 +73,17 @@ function SearchCommandLine() {
         }      
         if(item.type === "ai"){
           return(
-            <Box key={item.id} flexDirection="column" borderStyle="round" marginBottom={1}>
+            <Box key={item.id} flexDirection="column" borderStyle="round" marginBottom={0}>
               <Text bold color="cyan">AI:</Text>
               <Text>{item.title}</Text>
+            </Box>
+          )
+        }
+        if(item.type === "info"){
+          return(
+            <Box key={item.id} height={10} flexDirection="column" borderStyle="round" padding={1}>
+              <Text bold color="cyan">{item.title}</Text>
+              <Text>End: Ctrl + c</Text>
             </Box>
           )
         }      
@@ -85,7 +94,7 @@ function SearchCommandLine() {
         <Text color="green" marginTop={1}>Please Wait...</Text>
       </Box>
     ):(<Box />)}
-    <Box flexDirection="column" borderStyle="round" padding={2}>
+    <Box flexDirection="column" borderStyle="round" padding={1}>
       <Box marginRight={1}>
         <Text bold color="cyan">Input: </Text>
         <TextInput 
@@ -94,7 +103,7 @@ function SearchCommandLine() {
           onSubmit={handleSubmit} 
         />
       </Box>
-      <Box marginTop={1} flexDirection="column">
+      <Box marginTop={0} flexDirection="column">
         <Text dimColor>Type your text and press Enter:</Text>
       </Box>
     </Box>
